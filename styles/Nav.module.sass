@@ -1,0 +1,47 @@
+@import colors
+  
+nav.nav
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  width: 100%
+  position: sticky
+  top: 0
+
+  z-index: 5
+  .spaceSaver
+    // save space for hover-state so links dont move
+    font-weight: bold
+    display: block
+    height: 0
+    overflow: hidden
+
+
+  a
+    flex-grow: 1
+    background-color: #353535
+    color: $brightOrange
+    padding: 10px
+    border: none
+    cursor: pointer
+  
+    &:hover
+      font-weight: bold
+      transition: font-weight .5s ease
+      background-color: #404040
+      color: orange
+  
+    &.inverse
+      // backgroundColor: colors.orange
+      color: black
+      position: relative
+      transition: all 0.3s ease
+    
+    &.inverse:hover
+      box-shadow: -2px 2px 11px 7px rgba(0, 0, 0, 0.55),
+      background-color: orange
+      color: black
+      
+    
+
+
