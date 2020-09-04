@@ -1,6 +1,6 @@
 @import colors
   
-nav.nav
+.nav
   display: flex
   flex-direction: row
   justify-content: space-around
@@ -16,7 +16,6 @@ nav.nav
     height: 0
     overflow: hidden
 
-
   a
     flex-grow: 1
     background-color: #353535
@@ -30,18 +29,18 @@ nav.nav
       transition: font-weight .5s ease
       background-color: #404040
       color: orange
+
+a.inverse
+  background-color: $orange
+  color: black
+  position: relative
+  transition: none
+  transition: all 0.3s ease
+  &:hover
+    box-shadow: -2px 2px 11px 7px rgba(0, 0, 0, 0.55),
+    background-color: orange
+    color: black
   
-    &.inverse
-      // backgroundColor: colors.orange
-      color: black
-      position: relative
-      transition: all 0.3s ease
-    
-    &.inverse:hover
-      box-shadow: -2px 2px 11px 7px rgba(0, 0, 0, 0.55),
-      background-color: orange
-      color: black
-      
     
 
 

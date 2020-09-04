@@ -12,7 +12,7 @@ export default function Nav() {
             href={`${link.linkId}`}
             key={ link.label }
             // style={[ styles.nav.a ]}
-            className={ link.inverse ? 'inverse' : ''}>
+            className={ link.inverse ? styles.inverse : ''}>
             { link.label }
             <span
               className={ styles.spaceSaver }

@@ -1,0 +1,74 @@
+@import colors
+
+.experience
+  width: 100%
+  padding: 100px 0
+
+.listPane
+  width: 30%
+
+.experienceWindow
+  display: flex
+  background-color: $gray1
+  margin: 20px auto
+  width: 65vw 
+  min-width: 300px
+  height: 45vh 
+  min-height: 250px
+  border: 1px solid $gray2
+  border-radius: 3px
+
+.experienceEntry
+  padding: 20px
+  width: 100%
+  ul
+    text-align: left
+    padding: 10px 20px 10px 10px
+    font-size: 14px
+
+.label
+  display: block
+  padding: 5px 15px 5px 5px
+  color: $darkGray2
+  font-size: 0.8rem
+
+.active
+  margin-right: 0px
+  padding-right: 10px
+  background-color: orange
+
+// style component objects
+// componentObject
+//   h3
+//     marginTop: 0
+  
+
+.listPane 
+  .listBorder
+    border-right: 1px solid $gray2
+
+  text-align: left
+  ul
+    padding-left: 0
+    margin: 0
+    font-size: 14px
+    li:not(.active) button:not(:disabled):hover
+      background-color: $orange
+    li
+      text-align: left
+      // button:not(:disabled)
+      //   cursor: pointer
+      margin-right: 10px // not active
+      button
+        padding: 10px 10px 10px 20px
+        border: none
+        background: none
+        width: 100%
+        text-align: left
+
+.detailsView
+  overflow-y: scroll
+
+  ul li
+    padding: 10px 20px 10px 10px
+  

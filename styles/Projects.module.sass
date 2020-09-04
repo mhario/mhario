@@ -4,11 +4,13 @@
   padding-top: 50px
   margin-left: 10px
   margin-right: 10px
+  width: 100%
 .projectsSection
   white-space: nowrap
   margin: 50px
   display: flex
   justify-content: space-between
+  align-items: center
 .projectViewWindow
   height: 601px
   position: relative
@@ -16,7 +18,42 @@
   width: 75vw
 .navButtons
   background: none
+  background-color: red
+  height: 55px
+  width: 55px
+  border-radius: 50%
   border: none
   cursor: pointer
   img:
     width: 40
+
+.card
+  border: 1px solid gray
+  border-radius: 3px
+  display: inline-block
+  width: calc(100% - 2px)
+  position: absolute
+
+  transition: left 0.25s ease
+  ul
+    list-style: none
+
+
+.buttonBar
+  display: flex
+  flex-direction: row
+  padding: 0
+  a
+    flex-grow: 1
+    font-size: 16px
+    font-weight: bold
+    justify-content: space-between
+    cursor: pointer
+    padding: 10px
+  span
+    flex-grow: 1
+    font-size: 14px
+    padding: 10px
+    color: #555
+    cursor: not-allowed
+    background-color: gainsboro
