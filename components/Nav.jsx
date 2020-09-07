@@ -5,13 +5,11 @@ export default function Nav() {
     <nav
       className={styles.nav}
       id="nav">
-
       {
         links.map(link => (
           <a
             href={`${link.linkId}`}
             key={ link.label }
-            // style={[ styles.nav.a ]}
             className={ link.inverse ? styles.inverse : ''}>
             { link.label }
             <span

@@ -1,13 +1,13 @@
-
 import styles from '../../styles/Experience.module.sass'
+
 export function IHS() {
   return (
     <article
       className={styles.experienceEntry}>
       <header>
         <h3>IHS Markit</h3>
-        <h4>Associate ​ Software Engineer II</h4>
-        <p className="dateLocation">
+        <h4>Associate Software Engineer II</h4>
+        <p>
           <span>Boulder, CO</span>
           <span>May 2017 / June 2019</span>
         </p>

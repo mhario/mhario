@@ -3,14 +3,14 @@ import styles from '../styles/Projects.module.sass'
 export default function Project(props) {
   return (
     <article
-      // className="project"
       style={positionObject(props.position)}
       className={ styles.card }>
       <header>
         <h3>{props.project.name}</h3>
       </header>
-      <section style={{display:'inline-block', verticalAlign:'top',
-        width: props.project.image ? '50%' : '100%'}}>
+      <section
+        className="valign-top disp-inline-block"
+        style={{ width: props.project.image ? '50%' : '100%'}}>
         {
           props.project.content
         }
@@ -19,18 +19,15 @@ export default function Project(props) {
         props.project.image
           ? <img src={props.project.image}
             alt="Screenshot"
-            style={{
-              display:'inline-block', width:'50%',
-              maxHeight:'475px', maxWidth:'475px'
-            }} />
+            className={ styles.thumbnail } />
           : ''
       }
       <footer
         className={styles.buttonBar}>
-        <a href={props.project.githubUrl} tabIndex="-1">GitHub</a>
+        <a href={props.project.githubUrl} className="btn-link" tabIndex="-1">GitHub</a>
         {
           props.project.liveUrl
-            ? <a href={props.project.liveUrl} tabIndex="-1">Live</a>
+            ? <a href={props.project.liveUrl} className="btn-link" tabIndex="-1">Live</a>
             : <span disabled>Live</span>
         }
       </footer>

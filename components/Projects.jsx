@@ -11,43 +11,41 @@ const projects = [
     image: '3dgol.png',
     content: 
       <section>
-        <section>
-          Conway's 'Game of Life', converted into 3D! 
-          <h4>Technologies</h4>
-          <p style={styles.dateLocation}>
-            <span>ThreeJS</span>
-            <span>React</span>
-          </p>
-          <h4>Technical Challenges</h4>
-          <ul>
-            <li>Integrating ThreeJS with React <small>(Interface, data, etc.)</small></li>
-            <li>Game logic <small>(Integrating with ThreeJS, turn cycle calc)</small></li>
-            <li></li>
-          </ul>
-          <h4>Coming Updates</h4>
-          <ul>
-            <li>Save board state</li>
-            <li>Improve interface</li>
-          </ul>
-        </section>
+        Conway's 'Game of Life', converted into 3D! 
+        <h4>Technologies</h4>
+        <p className="spread">
+          <span>ThreeJS</span>
+          <span>React</span>
+        </p>
+        <h4>Technical Challenges</h4>
+        <ul>
+          <li>Integrating ThreeJS with React <small className="space-left"> — Interface, data, etc.</small></li>
+          <li>Game logic <small className="space-left"> — Integrating with ThreeJS, turn cycle calc</small></li>
+          <li></li>
+        </ul>
+        <h4>Coming Updates</h4>
+        <ul>
+          <li>Save board state</li>
+          <li>Improve interface</li>
+        </ul>
       </section>
   },
   {
     name: 'BiteSwipeLite',
     githubUrl: 'https://github.com/mhario/biteswipelite',
     content: 
-      <section>
+      <section className="space-bottom">
         Originally built by with a team of three on React Native.<br />
         More recently, I've started to rebuild it as a React app. 
         <h4>Technologies</h4>
-        <p style={styles.dateLocation}>
+        <p className="spread">
           <span>React</span>
           <span>Express</span>
           <span>Yelp API</span>
         </p>
         <h4>Technical Challenges</h4>
         <ul>
-          <li>Architecture <small>(Express API holds key for services)</small></li>
+          <li>Architecture <small className="space-left"> — Express API holds key for services</small></li>
           <li></li>
         </ul>
         <h4>Coming Updates</h4>
@@ -63,14 +61,14 @@ const projects = [
     name: 'Codsworx',
     githubUrl: 'https://github.com/mhario/codsworx',
     content: 
-      <section>
+      <section className="space-bottom">
         <h4>Technologies</h4>
-        <p style={styles.dateLocation}>
+        <p className="spread">
           <span>React</span>
           <span>Mongoose</span>
           <span>Express</span>
         </p>
-        <strong style={styles.spacer10}>This project is in its very early stages! More to come later.</strong>
+        <strong>This project is in its very early stages! More to come later.</strong>
         {/* <header>Coming Updates</header>
         <ul>
           <li>Everything</li>
@@ -83,7 +81,7 @@ const projects = [
   //   content:
   //     <section>
   //       <header>Technologies</header>
-  //       <p style={styles.dateLocation}>
+  //       <p>
   //         <span>React</span>
   //         <span>Radium</span>
   //       </p>

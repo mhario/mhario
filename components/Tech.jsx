@@ -7,12 +7,12 @@ export default function Tech() {
     <article id="tech" className={styles.tech}>
 
       <header className="header">
-        <h2>Technologies</h2>
+        <h2 className="no-margin">Technologies</h2>
       </header>
       <div
         className={ styles.wrapperDiv }
         role="presentation">
-        <ul style={ styles.betterOnes }>
+        <ul>
           <li>Vue / Vuex</li>
           <li>React / Redux</li>
           <li>HTML5, jQuery</li>
@@ -32,7 +32,7 @@ export default function Tech() {
         </ul>
       </div>
       <section>
-        <h3 style={{display:'inline-block', marginRight:'20px'}}>Studying:</h3>
+        <h3 className="no-margin disp-inline-block space-right space-right-10x">Studying:</h3>
         <small>AWS, Docker, DevOps, Next.js</small>
       </section>
     </article>

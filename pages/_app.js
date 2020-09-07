@@ -1,7 +1,7 @@
 import '../styles/globals.sass'
 
-function MyApp({ Component, pageProps }) {
+function Mhario({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default Mhario

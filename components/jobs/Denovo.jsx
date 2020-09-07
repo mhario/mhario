@@ -1,8 +1,5 @@
-// import React from 'react'
-
-// import { sharedStyles } from '../styles'
-
 import styles from '../../styles/Experience.module.sass'
+
 export function Denovo() {
   return (
     <article
@@ -10,7 +7,7 @@ export function Denovo() {
       <header>
         <h3>Denovo Ventures, LLC</h3>
         <h4>Software Engineer - Innovation</h4>
-        <p className="dateLocation">
+        <p>
           <span>Boulder, CO</span>
           <span>July 2019 / Current</span>
         </p>

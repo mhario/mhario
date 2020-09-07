@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
@@ -9,28 +11,38 @@ import Experience from '../components/Experience'
 import Contact from '../components/Contact'
 
 
-export default function Home() {
+export default class Home extends React.Component {
 
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Mark Hario</title>
-        <link rel="icon" href="/favicon.ico" />
-        {/* TODO add ga */}
-        <script src="https://kit.fontawesome.com/609bfcbb0e.js" crossOrigin="anonymous"></script>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"></link>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"></link>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet"></link>
+  constructor() {
+    super()
+  }
 
-      </Head>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Tech />
-      <Projects />
-      <Contact />
+  componentDidMount() {
+    window.document.querySelector('html').setAttribute('style', 'scroll-behavior: smooth;')
+  }
 
-    </div>
-  )
+  render(){
+    return (
+      <div className={styles.container}>
+        <Head>
+          <title>Mark Hario</title>
+          <link rel="icon" href="/favicon.ico" />
+          {/* TODO add ga */}
+          <script src="https://kit.fontawesome.com/609bfcbb0e.js" crossOrigin="anonymous"></script>
+          <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet"></link>
+          <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet"></link>
+          <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet"></link>
+  
+        </Head>
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Tech />
+        <Projects />
+        <Contact />
+  
+      </div>
+    )
+  }
 }

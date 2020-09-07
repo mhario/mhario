@@ -28,7 +28,6 @@ export default function About() {
         <h2>Hey there!</h2>
         <img
           alt="Me"
-          style={styles.img}
           src='/newSkinny.jpeg'/>
       </header>
       { content.welcome.map((p, index) => <p key={index}>{p}</p>) }
