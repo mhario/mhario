@@ -120,7 +120,7 @@ export default class Projects extends React.Component {
             disabled={ this._isOnFirst() }
             className={ styles.navButtons }
             onClick={this.viewPrev}
-            ><icon className="fas fa-caret-left fa-5x" style={{ marginLeft: '-3px' }} />
+            ><i className="fas fa-caret-left fa-5x space-right space-right-4x" />
           </button>
           <div
             className={ styles.projectViewWindow }
@@ -139,7 +139,7 @@ export default class Projects extends React.Component {
             disabled={ this._isOnLast() }
             className={ styles.navButtons }
             onClick={ this.viewNext }>
-              <icon className="fas fa-caret-right fa-5x" style={{ marginRight: '-3px' }} />
+              <i className="fas fa-caret-right fa-5x space-left space-left-4x" />
           </button>
         </section>
         {/* <Upcoming /> */}

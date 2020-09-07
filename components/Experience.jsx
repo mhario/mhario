@@ -26,7 +26,7 @@ export default class Experience extends React.Component {
   _getActiveStyle(testIndex) {
     return this.state.currentViewIndex === testIndex
       ? styles.active
-      : null
+      : styles.inactive
   }
 
   render () {

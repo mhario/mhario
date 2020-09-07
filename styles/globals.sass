@@ -1,5 +1,8 @@
 @import colors
-  
+
+html
+  scroll-behavior:smooth
+
 body
   padding: 0
   margin: 0
@@ -18,7 +21,9 @@ h6
 
 a 
   color: inherit
-  text-decoration: none
+  // text-decoration: none
+  // transition: 
+  
 
 
 * 
@@ -48,7 +53,7 @@ ul
 button 
   border: none
   background-color: gainsboro
-  // color: blue
+  color: $darkGray3
   &:disabled 
     opacity: 0.5
     cursor: not-allowed
@@ -67,9 +72,21 @@ button
   textAlign: right
 
 .hideHorizontalScroll 
-  overflowX: hidden
+  overflow-x: hidden
 
 .clearfix::after
   content: ""
   clear: both
   display: table
+
+.space-left
+  margin-left: 2px
+  &.space-left-4x
+    margin-left: 8px
+.space-right
+  margin-right: 2px
+  &.space-right-4x
+    margin-right: 8px
+
+i
+  margin: auto 5px

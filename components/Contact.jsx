@@ -1,4 +1,4 @@
-// import styles from '../'
+import styles from '../styles/Contact.module.sass'
 
 export default function Contact() {
   return (
@@ -9,11 +9,11 @@ export default function Contact() {
       <header>
         <h2>Contact</h2>
       </header>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/mark-hario-6b871285/">LinkedIn</a></li>
-        <li><icon className="fas fa-target" /> Louisville, CO</li>
-        <li><icon className="fas fa-target" /> (734) 755 - 2807</li>
-        <li><icon className="fas fa-target" /> <a href="mailto:hario.mark@gmail.com">hario.mark@gmail.com</a></li>
+      <ul className={ styles.contactList }>
+        <li><a href="https://www.linkedin.com/in/mark-hario"><i className="fa fa-linkedin-square" />LinkedIn</a></li>
+        <li><i className="fa fa-map-marker" />Louisville, CO</li>
+        <li><i className="fa fa-phone-square" />(734) 755 - 2807</li>
+        <li><a href="mailto:hario.mark@gmail.com"><i className="fa fa-envelope" />hario.mark@gmail.com</a></li>
       </ul>
     </article>
   )

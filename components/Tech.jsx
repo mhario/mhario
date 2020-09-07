@@ -33,7 +33,7 @@ export default function Tech() {
       </div>
       <section>
         <h3 style={{display:'inline-block', marginRight:'20px'}}>Studying:</h3>
-        <small>AWS, Docker, DevOps</small>
+        <small>AWS, Docker, DevOps, Next.js</small>
       </section>
     </article>
   )
